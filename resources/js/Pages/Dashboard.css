@@ -1,0 +1,23 @@
+.chats__list {
+    background-color: #1b263b;
+    color: white;
+}
+
+.chat__background {
+    background-color: #0d1b2a;
+    height: calc(100vh - 234px);
+}
+
+.users__selector {
+    color: black;
+}
+
+.users__selector-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.select__chat-message {
+    padding: 20px;
+    color: white;
+}

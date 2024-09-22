@@ -1,0 +1,13 @@
+.chat__not-viewed {
+    color: green;
+    font-weight: bold;
+}
+
+.chat__row {
+    border-top: 1px solid #415a77;
+    width: 100%;
+}
+
+.chats__list {
+    background-color: #1b263b;
+}
