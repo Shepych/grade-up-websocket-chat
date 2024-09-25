@@ -6,6 +6,7 @@
     align-items: start;
     gap: 20px;
     color: white;
+    overflow-y: scroll;
 }
 
 .message {

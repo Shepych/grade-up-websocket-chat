@@ -45,7 +45,7 @@ export default function ChatsList({ chats: initialChats, onSelectChat }) {
                             );
                         } else {
                             // Если чата нет, добавляем его в массив
-                            return [...prevChats, { id: message.chat_id, ...message.data }];
+                            return [...prevChats, { id: message.chat_id, ...message.data, viewed: 0 }];
                         }
                     });
                 }
@@ -104,13 +104,13 @@ export default function ChatsList({ chats: initialChats, onSelectChat }) {
             ) : chats.length > 0 ? (
                 <div className={`flex flex-col items-start`}>
                     {chats.map((chat) => (
-                        <button
+                        <div
                             onClick={(e) => handleChatSelect(e, chat.id)}
                             className={`${chat.viewed === 0 ? styles['chat__not-viewed'] : ''} select__chat-button p-4 ${styles['chat__row']}`}
                             key={chat.id}
                         >
                             {chat.name || `Чат #${chat.id}`}
-                        </button>
+                        </div>
                     ))}
                 </div>
             ) : (

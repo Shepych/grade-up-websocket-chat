@@ -1,11 +1,22 @@
-.chat__not-viewed {
-    color: green;
-    font-weight: bold;
+
+.chat__not-viewed::before {
+    width: 8px;
+    height: 8px;
+    background-color: lime;
+    content: '';
+    display: flex;
+    border-radius: 10px;
+    position: absolute;
+    top: 24px;
+    left: calc(100% - 30px);
 }
 
 .chat__row {
     border-top: 1px solid #415a77;
     width: 100%;
+    text-align: center;
+    height: 57px;
+    position: relative;
 }
 
 .chats__list {
